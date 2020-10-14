@@ -10,9 +10,9 @@ Ethical, social money with the Roll API.
 
 Today the world needs to boost bartering, consume less, promote human interaction as well as civil rights, and eliminate global slavery too.
 
-Capitalism as we know it, will dramatically change in the next few years because of climate disruption.
+Capitalism as we know it, can dramatically change in the next few years because of COVID or climate disruption.
 
-But can traditional banking save you in the midst of a chaos? If you're not too clear about that, let's just imagine how a better world can be.
+But what about traditional banking in the midst of a chaos? If you're not too clear about that, let's just imagine how a better world can be.
 
 ### About ETHIC
 
@@ -28,9 +28,7 @@ ETHIC is also a karmic, trust indicator behaving as a powerful attractor rather 
 
 Can you imagine? It is all about tuning with the forces in the universe that'll provide you with what you actually deserve, and vice versa.
 
-Imagine is an embeddable code snippet written in PHP that demonstrates how to transfer ethical trust through social money and the [Roll API](https://docs.tryroll.com/).
-
-Since PHP is widely used on the Internet the snippet can be easily revamped into multiple CMS and frameworks. It allows users to pay for goods and services, or reward anyone with ETHIC for their ethical impact on the post-COVID economy.
+Imagine is an embeddable code snippet written in PHP that demonstrates how to transfer ethical trust through social money and the [Roll API](https://docs.tryroll.com/) when paying for goods and services. Since PHP is widely used on the Internet the snippet can be easily revamped into multiple CMS and frameworks.
 
 ### Development
 

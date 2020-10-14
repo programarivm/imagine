@@ -57,13 +57,13 @@ Remember:
 
 Should you want to play around with the development environment follow the steps below.
 
-Build the Docker containers:
-
-	docker-compose up -d
-
 Generate a development SSL certificate:
 
 	docker exec -it imagine_php_fpm bash/ssl.sh
+
+Build the Docker containers:
+
+	docker-compose up -d
 
 Run the tests:
 

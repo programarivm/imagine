@@ -30,6 +30,22 @@ Can you imagine? It is all about tuning with the forces in the universe that'll 
 
 Imagine is an embeddable code snippet written in PHP that demonstrates how to transfer ethical trust through social money and the [Roll API](https://docs.tryroll.com/) when paying for goods and services. Since PHP is widely used on the Internet the snippet can be easily revamped into multiple CMS and frameworks.
 
+### Proof of Concept
+
+Let's say Bob is a "software developer" using the freelancing platform Acme for a living on a regular basis.
+
+All of a sudden he needs to be an "employer" on the Acme platform for the first time and use the services of Alice, who is a CSS designer. The problem is Acme users (Alice) can't see any previous feedback indicator (stars) on how ethical Bob is as an employer.
+
+> Here is where ETHIC comes to the rescue!
+
+When the work is being accepted, Alice gets an HTML popup informing that Bob is an awesome human being, a regular user of ETHIC, so finally decides to accept the job.
+
+Finally, once the task is completed, Bob might want to get some ETHIC from a 100.00 USD transaction with Alice, in which case he'll ask Alice, if she's okay with that, to please transfer 1, 2, 3, 4 or 5 ETHIC.
+
+> 1 ETHIC = 1 milligram of gold.
+
+In a nutshell, this is nothing but a rating system in the form of an ETHIC transaction from Alice to Bob.
+
 ### Development
 
 Should you want to play around with the development environment follow the steps below.

@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  php_fpm:
+      build: .
+      container_name: imagine_php_fpm
+      restart: always
+      working_dir: /usr/share/imagine
+      volumes:
+          - ./:/usr/share/imagine
+          - ./docker/php/php.ini:/usr/local/etc/php/php.ini

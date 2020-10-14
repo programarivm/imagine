@@ -4,15 +4,15 @@
 	<img src="https://github.com/programarivm/imagine/blob/master/resources/ethic-logo.jpg" />
 </p>
 
-Ethical, social money with the Roll API.
+<p align="center">
+	Ethical, social money with the Roll API.
+</p>
 
 ### Intro
 
 Today the world needs to boost bartering, consume less, promote human interaction as well as civil rights, and eliminate global slavery too.
 
-Capitalism as we know it, can dramatically change in the next few years because of COVID or climate disruption.
-
-But what about traditional banking in the midst of a chaos? If you're not too clear about that, let's just imagine how a better world can be.
+Capitalism as we know it, can dramatically change in the next few years because of COVID or climate disruption. What about traditional banking in the midst of a chaos? If you're not too clear about that, let's just imagine how a better world can be.
 
 ### About ETHIC (EHC)
 
@@ -56,6 +56,14 @@ Remember:
 ### Development
 
 Should you want to play around with the development environment follow the steps below.
+
+Build the Docker containers:
+
+	docker-compose up -d
+
+Generate a development SSL certificate:
+
+	docker exec -it imagine_php_fpm bash/ssl.sh
 
 Run the tests:
 

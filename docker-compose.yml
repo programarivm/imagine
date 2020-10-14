@@ -5,7 +5,20 @@ services:
       build: .
       container_name: imagine_php_fpm
       restart: always
-      working_dir: /usr/share/imagine
+      working_dir: /usr/share/nginx/imagine
       volumes:
-          - ./:/usr/share/imagine
+          - ./:/usr/share/nginx/imagine
           - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+
+  nginx:
+      image: nginx:1.18
+      container_name: imagine_nginx
+      restart: always
+      working_dir: /usr/share/nginx/imagine
+      ports:
+          - "443:443"
+      volumes:
+          - ./:/usr/share/nginx/imagine
+          - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+          - ./docker/nginx/ssl/try2imagine.local.crt:/etc/nginx/ssl/try2imagine.local.crt
+          - ./docker/nginx/ssl/try2imagine.local.key:/etc/nginx/ssl/try2imagine.local.key

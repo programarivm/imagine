@@ -4,15 +4,23 @@ Today the world needs to boost bartering, promote human interaction as well as c
 
 But can traditional banking save you in the midst of a chaos? If you're not too clear about that, let's just imagine how a better world can be.
 
-Imagine is a code snippet integrated with the [Roll API](https://docs.tryroll.com/) that PHP developers can embed in apps and web sites for users to pay for goods and services, or reward anyone with ETHIC for their ethical actions.
+### About ETHIC
 
-> ETHIC is a solidarity currency operating in the digital landscape.
+ETHIC is a solidarity currency operating in the digital landscape.
 
 The value of ETHIC resides in ethics. The aim of it is to provide a sustainable alternative to traditional money controlled by third parties such as central banks or the global freelance platforms market, just to name a few.
 
-At this stage, ETHIC is possibly more of a karmic indicator behaving as a powerful attractor rather than any other thing.
+> If you're an ETHIC user in today's economy, let's work together!
 
-Can you imagine? This is about tuning with the forces in the universe that'll provide you with what you actually deserve!
+ETHIC is also a karmic, trust indicator behaving as a powerful attractor rather than any other thing. Also, as opposed to other currencies, the purpose of ETHIC is not accumulation, but simply usage.
+
+### Embedding ETHIC Payments Into Websites
+
+Can you imagine? It is all about tuning with the forces in the universe that'll provide you with what you actually deserve, and vice versa.
+
+Imagine is an embeddable code snippet written in PHP that demonstrates how to transfer ethical trust through social money and the [Roll API](https://docs.tryroll.com/).
+
+Since PHP is widely used on the Internet, the snippet is also easy to revamp into multiple CMS and frameworks, allowing users to pay for goods and services, or reward anyone with ETHIC for their ethical actions.
 
 ### Development
 

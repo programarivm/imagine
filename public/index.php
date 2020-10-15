@@ -13,9 +13,15 @@ $app->addRoutingMiddleware();
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
 $app->get('/', function (Request $request, Response $response, $args) {
-    $file = __DIR__ . '/../html/the-form.html';
+    $file = __DIR__ . '/../html/login.html';
     $response->getBody()->write(file_get_contents($file));
     return $response;
+});
+
+$app->get('/login/oauth2/callback', function (Request $request, Response $response, $args) {
+    echo 'Soon available! Please be patient.';
+    exit;
+    // TODO ...
 });
 
 $app->run();

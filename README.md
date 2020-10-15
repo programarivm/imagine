@@ -57,17 +57,21 @@ Remember:
 
 Should you want to play around with the development environment follow the steps below.
 
+Create an `.env` file and update it accordingly:
+
+	$ cp .env.example .env
+
 Generate a development SSL certificate:
 
-	docker exec -it imagine_php_fpm bash/ssl.sh
+	$ docker exec -it imagine_php_fpm bash/ssl.sh
 
 Build the Docker containers:
 
-	docker-compose up -d
+	$ docker-compose up -d
 
 Run the tests:
 
-	docker exec -it imagine_php_fpm vendor/bin/phpunit --configuration phpunit-docker.xml
+	$ docker exec -it imagine_php_fpm vendor/bin/phpunit --configuration phpunit-docker.xml
 
 ### Contributions
 

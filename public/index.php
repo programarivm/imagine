@@ -12,9 +12,9 @@ $app->addRoutingMiddleware();
 
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
-$app->get('/hello/{name}', function (Request $request, Response $response, $args) {
-    $name = $args['name'];
-    $response->getBody()->write("Hello, $name");
+$app->get('/', function (Request $request, Response $response, $args) {
+    $file = __DIR__ . '/../html/the-form.html';
+    $response->getBody()->write(file_get_contents($file));
     return $response;
 });
 

@@ -67,11 +67,11 @@ Create an `.env` file and update it accordingly:
 
 Generate a development SSL certificate:
 
-	$ docker exec -it imagine_php_fpm bash/ssl.sh
+	$ bash/dev/ssl.sh
 
 Build the Docker containers:
 
-	$ docker-compose up -d
+	$ docker-compose up --build
 
 Run the tests:
 

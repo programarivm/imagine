@@ -24,8 +24,8 @@ services:
       volumes:
           - ./:/usr/share/nginx/imagine
           - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
-          - ./docker/nginx/ssl/try2imagine.local.crt:/etc/nginx/ssl/try2imagine.local.crt
-          - ./docker/nginx/ssl/try2imagine.local.key:/etc/nginx/ssl/try2imagine.local.key
+          - ./docker/nginx/ssl/try2imagine.com.crt:/etc/nginx/ssl/try2imagine.com.crt
+          - ./docker/nginx/ssl/try2imagine.com.key:/etc/nginx/ssl/try2imagine.com.key
 
 networks:
   imagine:

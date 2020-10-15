@@ -28,21 +28,25 @@ EHC is also a karmic, trust indicator behaving as a powerful attractor rather th
 
 Can you imagine? It is all about tuning with the forces in the universe that'll provide you with what you actually deserve, and vice versa.
 
-Imagine is an embeddable code snippet written in PHP that demonstrates how to transfer ethical trust in the form of social money through the [Roll API](https://docs.tryroll.com/) when paying for goods and services on the Internet. Since PHP is widely used the snippet can be easily revamped into multiple CMS and frameworks.
+Imagine is an easy-to-use embeddable form that demonstrates how to transfer ethical trust in the form of social money through the [Roll API](https://docs.tryroll.com/) when paying for goods and services on the Internet. It can be easily revamped into a variety of flavors such as a WordPress plugin.
 
 ### Proof of Concept
 
 Let's say Bob is a "software developer" using the freelancing platform Acme for a living on a regular basis.
 
-All of a sudden he needs to be an "employer" on Acme for the first time which means to use the services of Alice, who is a data scientist. The problem is Acme users (Alice) can't see any previous feedback indicator (stars) on how ethical Bob is as an employer.
+All of a sudden he gets a new request from a client and decides to use Acme as an "employer" for the first time, which means to use the services of Alice, who is a data scientist. The problem is Acme users (Alice) can't see any previous feedback indicator (stars) on how ethical Bob might be as an employer.
 
-> Here is where ETHIC comes to the rescue!
+Here is where ETHIC comes to the rescue!
 
-When the work is being accepted, Alice gets a nice user-friendly HTML popup informing that Bob is an awesome human being, a regular user of EHC, so finally decides to accept the work -- or alternatively, Bob tells Alice about his amazing website with the Imagine plugin embedded.
+Bob tells Alice he is an ETHIC user, an amazing human being on this planet, and shares with her the URL of his payment form on Imagine.
 
-Finally, once the task is completed, Bob might want to get some EHC from a 100.00 USD transaction with Alice, in which case he'll ask Alice, if she's okay with that, to please transfer 1, 2, 3, 4 or 5 EHC.
+Finally, once the task is completed Bob might want to get some EHC from the 100.00 USD transaction with Alice, in which case he'll ask her to please transfer 1, 2, 3, 4 or 5 EHC, if she is okay with that.
 
-> 1 EHC = 1 milligram of gold.
+<p align="center">
+1 EHC = 1 milligram of gold
+</p>
+
+> Alternatively, if Acme is integrated with Imagine out-of-the-box Alice will get a nice user-friendly HTML popup on Acme.
 
 In a nutshell, this is nothing but a rating system in the form of an EHC transaction from Alice to Bob.
 

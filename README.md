@@ -10,9 +10,7 @@
 
 ### Intro
 
-Today the world needs to boost bartering, consume less, promote human interaction as well as civil rights, and eliminate global slavery too.
-
-Capitalism as we know it, can dramatically change in the next few years because of COVID or climate disruption. What about traditional banking in the midst of a chaos? If you're not too clear about that, let's just imagine how a better world can be.
+Today the world needs to consume less, boost bartering, and promote human interaction as well.
 
 ### About ETHIC (EHC)
 

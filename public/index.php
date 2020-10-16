@@ -25,8 +25,8 @@ $app->get('/', function (Request $request, Response $response, $args) {
     return $response;
 });
 
-$app->get('/home', function (Request $request, Response $response, $args) {
-    $file = APP_PATH . 'html/home.html';
+$app->get('/feedback', function (Request $request, Response $response, $args) {
+    $file = APP_PATH . 'html/feedback.html';
     $response->getBody()->write(file_get_contents($file));
     return $response;
 });
@@ -43,9 +43,9 @@ $app->get('/login/oauth2/callback', function (Request $request, Response $respon
         new GuzzleRequest('POST', $_ENV['TRYROLL_OAUTH_ISSUER_URL'].'/token', $headers, $body)
     );
     switch ($response->getStatusCode()) {
-        case '200':
+        case 200:
             $token = json_decode((string) $response->getBody(), true);
-            setcookie(access_token, $token['access_token'], [
+            setcookie('access_token', $token['access_token'], [
                 'expires' => time() + $token['expires_in'],
                 'path' => '/',
                 'domain' => '',
@@ -53,7 +53,26 @@ $app->get('/login/oauth2/callback', function (Request $request, Response $respon
                 'httponly' => true,
                 'samesite' => 'Strict',
             ]);
-            return $response->withStatus(200)->withHeader('Location', '/home');
+            return $response->withStatus(200)->withHeader('Location', '/feedback');
+        default:
+            // TODO
+            break;
+    }
+});
+
+$app->get('/api/users/session', function (Request $request, Response $response, $args) {
+    $headers = [
+      'Authorization' => 'Bearer ' . $_COOKIE['access_token'],
+      'Content-Type' => 'application/json',
+    ];
+    $response = (new GuzzleClient())->send(
+        new GuzzleRequest('GET', $_ENV['TRYROLL_API_URL'].'/v2/users/session', $headers)
+    );
+    switch ($response->getStatusCode()) {
+        case 200:
+            $payload = (string) $response->getBody();
+            $response->getBody()->write($payload);
+            return $response->withHeader('Content-Type', 'application/json');
         default:
             // TODO
             break;

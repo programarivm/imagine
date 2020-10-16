@@ -45,15 +45,14 @@ $app->get('/login/oauth2/callback', function (Request $request, Response $respon
     switch ($response->getStatusCode()) {
         case '200':
             $token = json_decode((string) $response->getBody(), true);
-            setcookie(
-                'access_token',
-                $token['access_token'],
-                time() + $token['expires_in'],
-                '/',  // domain
-                '',   // subdomains
-                true, // secure, https
-                true  // HttpOnly
-            );
+            setcookie(access_token, $token['access_token'], [
+                'expires' => time() + $token['expires_in'],
+                'path' => '/',
+                'domain' => '',
+                'secure' => true,
+                'httponly' => true,
+                'samesite' => 'Strict',
+            ]);
             return $response->withStatus(200)->withHeader('Location', '/home');
         default:
             // TODO
